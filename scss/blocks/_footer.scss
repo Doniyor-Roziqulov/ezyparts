@@ -1,0 +1,133 @@
+.site-footer {
+    background-color: #f7eeec;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.list-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-link {
+    color: var(--Dark, #333);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    text-decoration-line: none;
+}
+
+.icon-list {
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.icon-big {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-span {
+    display: inline-block;
+    color: var(--Dark, #333);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    margin-top: 20px;
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.end-text {
+    color: var(--Dark, #333);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 150% */
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.end-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 500px) {
+    .footer-link {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width: 550px) {
+    .list-box {
+        justify-content: space-around;
+    }
+
+    .icon-big {
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .list-box {
+        column-gap: 100px;
+        justify-content: stretch;
+        margin-bottom: 0;
+    }
+
+    .icon-big {
+        justify-content: stretch;
+        column-gap: 100px;
+        align-items: flex-start;
+    }
+
+    .footer-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .end-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 37px;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .list-box {
+        column-gap: 123px;
+    }
+
+    .icon-big {
+        column-gap: 208px;
+    }
+
+    .site-footer {
+        padding-top: 30px;
+        padding-bottom: 7px;
+    }
+}
